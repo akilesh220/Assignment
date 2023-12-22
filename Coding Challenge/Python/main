@@ -1,0 +1,29 @@
+from dog import Dog
+from cat import Cat
+from petshelter import PetShelter
+
+
+# Example usage
+dog1 = Dog("Buddy", 3, "Labrador Retriever", "Golden Retriever")
+cat1 = Cat("Whiskers", 2, "Siamese", "White")
+
+#print(dog1)
+#print(cat1)
+
+shelter = PetShelter()
+
+# Get pet information from the user
+name = input("Enter pet name: ")
+try:
+    age = int(input("Enter pet age: "))
+except ValueError:
+    print("Invalid age input. Age must be an integer.")
+    exit()
+
+breed = input("Enter pet breed: ")
+
+
+
+
+# Retrieve and display pets from the database
+shelter.list_available_pets_from_database()
